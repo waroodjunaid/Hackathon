@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post App with Edit/Delete</title>
+    <link rel="stylesheet" href="postapp.css">
+</head>
+<body>
+    <header>
+        <h1>Post App</h1>
+    </header>
+
+    <main>
+        <!-- Form to Add Post -->
+        <section class="post-form">
+            <h2>Create a Post</h2>
+            <form id="postForm">
+                <input type="text" id="postTitle" placeholder="Enter post title" required />
+                <textarea id="postContent" placeholder="Enter post content" rows="5" required></textarea>
+                <button type="submit">Add Post</button>
+            </form>
+        </section>
+
+        <!-- Section to Display Posts -->
+        <section class="posts-section">
+            <h2>All Posts</h2>
+            <div id="postsContainer" class="posts-container">
+                <!-- Posts will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Post App. All rights reserved.</p>
+    </footer>
+
+    <script src="postapp.js"></script>
+</body>
+</html>
